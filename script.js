@@ -55,3 +55,9 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+const testBox = new THREE.Mesh(
+  new THREE.BoxGeometry(5, 5, 5),
+  new THREE.MeshStandardMaterial({ color: 0x00ff00 })
+);
+testBox.position.y = 2.5;
+scene.add(testBox);
